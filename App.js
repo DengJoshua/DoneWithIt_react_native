@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import TodoList from './app/components/TodoList';
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import ViewImageScreen from './app/screens/ViewImageScreen';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+      <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor="#455a64" barStyle="light-content" />
+      {/* <TodoList  message="First messages"  /> */}
+      {/* <WelcomeScreen /> */}
+      {/* <ViewImageScreen /> */}
+      <ListingDetailsScreen />
+    </SafeAreaView>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  users: {
+    display:"flex",
+    flexDirection:"column"
+  }
 });

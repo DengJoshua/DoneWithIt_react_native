@@ -12,7 +12,7 @@ function ViewImageScreen(props) {
       </View>
       <View style={styles.deleteIcon}>
         <MaterialCommunityIcons
-          name="mail"
+          name="trash-can-outline"
           color="white"
           size={35}
         />
@@ -29,8 +29,8 @@ function ViewImageScreen(props) {
 const styles = StyleSheet.create({
   closeIcon: {
     position: "absolute",
-    top: 30,
-    left: 30
+    top: 40,
+    left: 30,
   },
   container: {
     backgroundColor: colors.black,
@@ -38,13 +38,12 @@ const styles = StyleSheet.create({
   },
   deleteIcon: {
     position: "absolute",
-    top: 30,
+    top: 40,
     right: 30,
   },
   image: {
     width: "100%",
     height: "100%",
-    marginTop: 10
   },
 });
 

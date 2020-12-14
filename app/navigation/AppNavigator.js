@@ -21,7 +21,7 @@ const AppNavigator = () => (
       }}
     />
     <Tab.Screen
-      name="Edit"
+      name="ListingEdit"
       component={ListingEditScreen}
       options={({ navigation }) => ({
         tabBarButton: () => (
